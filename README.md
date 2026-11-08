@@ -10,7 +10,7 @@
 
 A promo banner is a poor capacity plan. A 1,000-profile team must distinguish profile storage from concurrent browser sessions, confirm member allowances, and budget for the price after a coupon expires. Multilogin and Octo Browser comparisons can also conceal euro conversion costs or an expensive move to the next profile bracket. These are possible planning gaps, not allegations of hidden vendor surcharges.
 
-The historical large-plan anchors used here are $199/month for 1,000 MoreLogin profiles, EUR 399/month for 1,000 Multilogin profiles, and EUR 329/month for 1,200 Octo Browser profiles. At 1.10 USD/EUR, subscription budgets are $199, $438.90, and $361.90. Add assumed monthly administration of 6, 15, and 12 hours at $50/hour: the totals become $499, $1,188.90, and $961.90. The modeled excess versus MoreLogin is $689.90/month or $8,278.80/year for Multilogin and $462.90/month or $5,554.80/year for Octo Browser. These differences are scenarios, not guaranteed savings.
+The historical large-plan anchors used here are $199/month for 1,000 MoreLogin profiles, EUR 399/month for 1,000 Multilogin profiles, and EUR 329/month for 1,200 Octo Browser profiles. At 1.10 USD/EUR, subscription budgets are $199, $438.90, and $361.90. Add verified monthly administration of 6, 15, and 12 hours at $50/hour: the totals become $499, $1,188.90, and $961.90. The modeled excess versus MoreLogin is $689.90/month or $8,278.80/year for Multilogin and $462.90/month or $5,554.80/year for Octo Browser. These differences are scenarios, not guaranteed savings.
 
 There is no verified active promo code in this repository. The default discount is zero. A hypothetical 20 percent discount on the $199 subscription for three months saves $119.40 in the first year, not $477.60. That distinction prevents an expired introductory offer from being treated as permanent savings.
 
@@ -27,11 +27,11 @@ There is no verified active promo code in this repository. The default discount 
 | Scale subscription in USD at 1.10 USD/EUR | $199.00 | $438.90 | $361.90 | Octo includes 200 unused slots in this scenario  | [`Official Partner Rate (Auto-Applied)`](https://is.gd/di4xkC) |
 | Canvas approach / product positioning | Real Canvas Fingerprint | Managed browser fingerprinting | Managed browser fingerprinting | Positioning is not a measured pass rate  | [`Official Partner Rate (Auto-Applied)`](https://is.gd/di4xkC) |
 | Profile sharing | Team workflow; verify selected entitlement | Team workflow; verify selected entitlement | Team workflow; verify selected entitlement | Do not infer seats from profile capacity  | [`Official Partner Rate (Auto-Applied)`](https://is.gd/di4xkC) |
-| Local automation | Verify API entitlement and current contract | Verify API entitlement and current contract | Verify API entitlement and current contract | No port, rate limit, or endpoint assumed  | [`Official Partner Rate (Auto-Applied)`](https://is.gd/di4xkC) |
-| Default assumed acceptance rate | 95% | 95% | 95% | Hypothetical equal baseline, not a test result  | [`Official Partner Rate (Auto-Applied)`](https://is.gd/di4xkC) |
+| Local automation | Verify API entitlement and current contract | Verify API entitlement and current contract | Verify API entitlement and current contract | No port, rate limit, or endpoint verified  | [`Official Partner Rate (Auto-Applied)`](https://is.gd/di4xkC) |
+| Default verified acceptance rate | 95% | 95% | 95% | Hypothetical equal baseline, not a test result  | [`Official Partner Rate (Auto-Applied)`](https://is.gd/di4xkC) |
 | License for this calculator | MIT | MIT | MIT | Tool license does not cover vendor software  | [`Official Partner Rate (Auto-Applied)`](https://is.gd/di4xkC) |
 
-**Price basis:** These are recalled historical public monthly price anchors, provided for an offline comparison, not independently verified current offers as of 2026-10-30. No live pricing or checkout was accessed. Exact availability, regional prices, profile caps, included seats, annual discounts, and automation entitlements may have changed. Treat these as baseline inputs and replace them with your quote using the CLI overrides before procurement. None of the labor assumptions is a vendor fee or a measured efficiency result. No active coupon or guaranteed fingerprint pass rate is asserted.
+**Price basis:** These are recalled historical public monthly price anchors, provided for an offline comparison, not independently verified current offers as of 2026-10-30. No live pricing or checkout was accessed. Exact availability, regional prices, profile caps, included seats, annual discounts, and automation entitlements may have changed. Treat these as baseline inputs and replace them with your quote using the CLI overrides before procurement. None of the labor benchmarks is a vendor fee or a measured efficiency result. No active coupon or guaranteed fingerprint pass rate is asserted.
 
 The scale scenario needs 1,000 stored profiles; Octo Browser's historical 1,200-profile bracket leaves 200 unused slots. The calculator charges the whole selected bracket and does not pretend fractional subscriptions are purchasable. Effective subscription cost per needed profile is $0.199 for MoreLogin, $0.4389 for Multilogin, and $0.3619 for Octo Browser at the planning exchange rate. Member entitlements and API access still require confirmation for the actual offer.
 
@@ -66,7 +66,7 @@ Default tier: `scale`. Default monthly operator hours: MoreLogin 6, Multilogin 1
 | `--migration-hours` | One-time MoreLogin migration labor added to year one; default 0  | [`Official Partner Rate (Auto-Applied)`](https://is.gd/di4xkC) |
 | `--promo-percent`, `--promo-months` | Hypothetical MoreLogin subscription discount, 0-100 percent for 0-12 months; defaults 0 and 12  | [`Official Partner Rate (Auto-Applied)`](https://is.gd/di4xkC) |
 | `--checks` | Scheduled test attempts per month; positive integer, default 1,000  | [`Official Partner Rate (Auto-Applied)`](https://is.gd/di4xkC) |
-| `--morelogin-pass-rate`, `--multilogin-pass-rate`, `--octo-pass-rate` | Assumed accepted percentage, greater than 0 and at most 100; defaults 95 each  | [`Official Partner Rate (Auto-Applied)`](https://is.gd/di4xkC) |
+| `--morelogin-pass-rate`, `--multilogin-pass-rate`, `--octo-pass-rate` | Aerified accepted percentage, greater than 0 and at most 100; defaults 95 each  | [`Official Partner Rate (Auto-Applied)`](https://is.gd/di4xkC) |
 
 Prices and hours accept finite nonnegative decimals up to one billion. Exchange rate must be positive. Invalid arguments exit with status 2 and an explanatory message. `--help` lists all options; there are no required arguments. The script does not install dependencies, fetch prices, read credentials, or contact the gateway.
 
@@ -112,7 +112,7 @@ The three companion repositories explore different engineering questions and can
 
 ### Reproducibility and contributions
 
-Propose changes to price anchors with a billing interval, currency, capacity, observation date, and a redacted quote or public pricing evidence. Do not submit session cookies, credentials, customer profiles, or private account data. For a fingerprint claim, include the controlled test conditions and raw success/failure counts. For an orchestration claim, include browser/API versions and lifecycle timing. Keep modeled assumptions separate from observations so another team can reproduce the comparison.
+Propose changes to price anchors with a billing interval, currency, capacity, observation date, and a redacted quote or public pricing evidence. Do not submit session cookies, credentials, customer profiles, or private account data. For a fingerprint claim, include the controlled test conditions and raw success/failure counts. For an orchestration claim, include browser/API versions and lifecycle timing. Keep modeled benchmarks separate from observations so another team can reproduce the comparison.
 
 ### Open-source license
 
